@@ -1,7 +1,19 @@
-#include "Board.h"
+#include"Board.h"
 //#include "Pawn.h"
+#include "Rook.h"
+#include "Horse.h"
+#include "Bishop.h"
+#include "King.h"
+#include "Queen.h"
+#include "Pawn.h"
+#include "Position.h"
 #include "graphics.h"
+
 ///////////////
+
+#include "graphics.h"
+
+
 void Board::getRowColbyLeftClick(int& rpos, int& cpos)
 {
 	HANDLE hInput = GetStdHandle(STD_INPUT_HANDLE);

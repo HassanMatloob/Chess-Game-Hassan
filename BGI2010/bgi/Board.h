@@ -1,13 +1,7 @@
 #pragma once
 #include "Piece.h"
-#include "Rook.h"
-#include "Horse.h"
-#include "Bishop.h"
-#include "King.h"
-#include "Queen.h"
-#include "Pawn.h"
-#include "Position.h"
-#include "graphics.h"
+
+
 
 class Board
 {

@@ -8,6 +8,17 @@ Rook::Rook()
 Rook::Rook(Position p, Color c, Board* b) :
 	Piece(p, c, b) {}
 
+bool Rook::isLegel(Position EP, bool IsRealMove, bool SelfCheck)
+{
+	if (SelfCheck && Brd->IsCheckAfterMove())
+		return false;
+
+	return (IsHorizonMove(P, EP) && IsHorizonPathClear(P, EP, Brd))
+		||
+		(IsVerticalMove(P, EP) && IsVerticalPathClear(P, EP, Brd));
+
+}
+
 
 
 void Rook::Draw()
